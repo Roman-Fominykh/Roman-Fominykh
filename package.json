@@ -1,7 +1,7 @@
 {
-  "name": "landing-page-small-apps",
+  "name": "fitclub-fomroman",
   "version": "0.0.1",
-  "description": "landing-page-small-apps",
+  "description": "fitclub-fomroman",
   "main": "index.js",
   "engines": {
     "node": "12.x"
