@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 const NotFound = (props) => (
   <div>
     <h1> 404: URL Is not found </h1>
-    <button type="button" tabIndex="0" onClick={props.goRoot}>Go to root</button>
+    <button type="button" tabIndex="0" onClick={props.goRoot}>Go to back, asshole</button>
   </div>
 );
 
