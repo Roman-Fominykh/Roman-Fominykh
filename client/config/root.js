@@ -12,9 +12,11 @@ import store, { history } from '../redux';
 
 import Home from '../components/home';
 import DummyView from '../components/dummy-view';
+import Landing from '../components/landing';
 import NotFound from '../components/404';
 
 import Startup from './startup';
+import landing from '../landing';
 
 
 const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
@@ -84,7 +86,8 @@ export default (props) => {
       <ConnectedRouter history={history} location={props.location} context={props.context}>
         <StartupConnected>
           <Switch>
-            <Route exact path="/" component={() => <DummyView />} />
+            <Route exact path="/" component={() => <Landing />} />
+            <Route exact path="/dummy" component={() => <DummyView />} />
             <Route exact path="/dashboard" component={() => <Home />} />
             <Route exact path="/salo/*" component={() => <Home />} />
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
