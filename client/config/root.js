@@ -12,11 +12,10 @@ import store, { history } from '../redux';
 
 import Home from '../components/home';
 import DummyView from '../components/dummy-view';
-import Landing from '../components/landing';
 import NotFound from '../components/404';
 
 import Startup from './startup';
-import landing from '../landing';
+import Landing from '../landing';
 
 
 const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
